@@ -26,11 +26,16 @@ func contactPage(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-
 	http.HandleFunc("/", homePage)
 	http.HandleFunc("/courses", coursePage)
 	http.HandleFunc("/about", aboutPage)
 	http.HandleFunc("/contact", contactPage)
+
+	// Serve CSS and other static assets from the static directory.
+	http.Handle(
+		"/static/",
+		http.StripPrefix("/static/", http.FileServer(http.Dir("static"))),
+	)
 
 	err := http.ListenAndServe("0.0.0.0:8080", nil)
 	if err != nil {
