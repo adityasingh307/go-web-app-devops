@@ -2,90 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>    
+    <title>Aditya's DevOps Lab</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="courses">Courses</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <a class="logo" href="/">Aditya's DevOps Lab</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/courses">Courses</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
     <main>
-        <section>
-            <h1>Learn DevOps from Basics</h1>
-            <p>The main purpose of this website is to guide people on how to learn DevOps 
-                from basics for Free. We will provide you with the best resources to learn.
-            </p>
+        <section class="hero">
+            <span class="tag">DevOps Learning Project</span>
+            <h1>Learning DevOps by building and deploying.</h1>
+            <p>This Go web application is part of my hands-on DevOps journey. I used it to practice containerization, CI/CD, Kubernetes, Helm, GitOps and NGINX Ingress.</p>
+            <a class="button" href="/courses">Explore the stack</a>
         </section>
-
-        <section>
-            <h2>Overview</h2>
-            <p> Zero to Hero courses on all DevOps tools and popular Cloud(AWS and Azure) platform</p>
-        </section>
-
-        <section>
-            <h2>Courses Offered</h2>
-            <p>Please look at the <a href="courses">courses</a> section.</p>  
+        <section class="card-grid">
+            <div class="card"><h3>CI/CD</h3><p>GitHub Actions runs the CI pipeline, builds the Docker image and pushes it to Docker Hub.</p></div>
+            <div class="card"><h3>Kubernetes</h3><p>The application runs as a Kubernetes Deployment with a ClusterIP Service.</p></div>
+            <div class="card"><h3>GitOps</h3><p>Argo CD watches the repository and deploys the Helm chart to my local Kind cluster.</p></div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; Abhishek.Veeramalla</p>
-    </footer>
+    <footer><p>Built and deployed as part of Aditya's DevOps learning journey.</p></footer>
 </body>
 </html>
