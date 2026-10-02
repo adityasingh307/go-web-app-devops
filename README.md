@@ -63,7 +63,7 @@ The application is a simple Go web application built with Go's `net/http` packag
 
 The UI was customized as part of this DevOps project to give the application a personal touch.
 
-![Application](docs/screenshots/application.jpg)
+![Application](docs/screenshots/application.png)
 
 ## CI/CD Pipeline
 
@@ -88,7 +88,7 @@ aditya3k4/go-web-app:36753695345
 
 ### GitHub Actions
 
-![GitHub Actions](docs/screenshots/github-actions.jpg)
+![GitHub Actions](docs/screenshots/github-actions.png)
 
 ## Docker
 
@@ -136,7 +136,7 @@ Go Pod:8080
 
 ### Kubernetes
 
-![Kubernetes](docs/screenshots/kubernetes.jpg)
+![Kubernetes](docs/screenshots/kubernetes.png)
 
 ## Helm
 
@@ -174,7 +174,7 @@ Helm Chart
 Kubernetes
 ```
 
-![Argo CD](docs/screenshots/argocd.jpg)
+![Argo CD](docs/screenshots/argocd.png)
 
 ## Ingress
 
@@ -235,10 +235,10 @@ go-web-app-devops/
 │       └── ci.yaml
 ├── docs/
 │   └── screenshots/
-│       ├── application.jpg
-│       ├── github-actions.jpg
-│       ├── argocd.jpg
-│       └── kubernetes.jpg
+│       ├── application.png
+│       ├── github-actions.png
+│       ├── argocd.png
+│       └── kubernetes.png
 ├── helm/
 │   └── go-web-app-chart/
 ├── k8s/
@@ -272,19 +272,19 @@ The main goal was to understand how the pieces work together rather than only le
 
 ### Application
 
-![Application](docs/screenshots/application.jpg)
+![Application](docs/screenshots/application.png)
 
 ### GitHub Actions
 
-![GitHub Actions](docs/screenshots/github-actions.jpg)
+![GitHub Actions](docs/screenshots/github-actions.png)
 
 ### Argo CD
 
-![Argo CD](docs/screenshots/argocd.jpg)
+![Argo CD](docs/screenshots/argocd.png)
 
 ### Kubernetes
 
-![Kubernetes](docs/screenshots/kubernetes.jpg)
+![Kubernetes](docs/screenshots/kubernetes.png)
 
 ## Author
 
